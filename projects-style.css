@@ -1,0 +1,199 @@
+/* PROJECTS CSS */
+/* BODY dev only */
+body {
+	/*background-color: #EEE;*/
+}
+
+/* GENERAL */
+.prjs * {
+	margin: 0; padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+	color: #000;
+}
+.prjs li {
+	margin-left: 25px;
+	/*margin-left: 35px;*/
+}
+.hidden {
+	display: none;
+}
+.heavy {
+	font-size: 1.4em;
+	font-weight:bold;
+}
+.light {
+	font-size: .7em;
+	color: #777;
+}
+.bold {
+	font-weight: bold;
+}
+.large {
+	font-size: 1.2em;
+}
+.small {
+	font-size: .8em;
+}
+.center {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.ml-li-align {
+	/*margin-left: 5px;*/
+	margin-left: 0;
+}
+
+/* PRJ */
+.prjs {
+	margin: 0 auto;
+	/*width: 1010px;*/
+	background-color: #FFF;
+	max-width: 1010px;
+}
+.pclr {
+	clear: both;
+}
+.prj {
+	width: 100%;
+	padding: 5px 0 10px 0;
+	margin: 0 0 5px 0;
+	border-bottom: solid 1px #f89406;
+}
+
+/* CLIENTS */
+.clients {
+	width: 46%;
+	float: left;
+}
+.url {
+	/*display: inline-block;*/
+	color: #900900
+}
+.url:after {
+	content: attr(href);
+}
+.desc p {
+	font-size: .9em;
+}
+.team {
+	margin: 10px 0 0 0;
+}
+.member {
+	margin: 10px 0 5px 0;
+	display: flex;
+	align-items: stretch;
+	/* webkit */
+	display: -webkit-flex;
+	-webkit-align-items: stretch;
+}
+.circle-flex {
+	/*width: 70px;*/
+	width: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* webkit */
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+
+}
+.circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 33px;
+	background: no-repeat center center;
+	background-size: cover;
+}
+.info-flex {
+	display: flex;
+	align-items: center;
+	/* webkit */
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	width: calc(100% - 66px);
+}
+.info {
+	
+}
+
+/* PROGRESS */
+.progress {
+	width: 50%;
+	float: right;
+}
+.sprints {
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	/* webkit */
+	display: -webkit-flex;
+	-webkit-align-items: stretch;
+}
+.sprint {
+	width: calc(20% - 2px);
+	float: left;
+	border: 1px solid #f5f5f5;
+	cursor: pointer;
+	line-height: 1.8em;
+	font-size: .8em;
+	font-weight: bold;
+	text-align: center;
+	color: #666;
+}
+.sprint:hover:after {
+	content: attr(title);
+}
+.sprint.na {
+	background-color: #E5E5E5;
+}
+.sprint.gd {
+	background-color: #04DB3F;
+}
+.sprint.wn {
+	background-color: #FFC315;
+}
+.sprint.dn {
+	background-color: #FF4919;
+}
+.ip {
+	border: 1px solid #CCC;
+}
+.ip:after {
+	content: 'In Progress';
+}
+.goals {
+	margin: 10px 0 0 0;
+}
+.goals ul {
+	margin: 5px 0 0 0;
+}
+.done {
+	color: #04DB3F;
+}
+.dnf {
+	color: #FFC315;
+}
+.dns {
+	color: #FF4919;
+}
+.na {
+	color: #999;
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 780px) {
+	.prjs {
+		/*display: none;*/
+	}
+	.clients {
+		width: 100%;
+		/*float: left;*/
+	}
+	.progress {
+		width: 100%;
+		margin: 10px 0 0 0;
+		/*float: right;*/
+	}
+}
