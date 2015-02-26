@@ -1,0 +1,171 @@
+<style>
+/* BODY dev only */
+body {
+	background-color: #EEE;
+}
+/* PRJS */
+.prjs * {
+	margin: 0; padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+	color: #000;
+}
+.prjs {
+	margin: 0 auto;
+	width: 1010px;
+	background-color: #FFF;
+	/*max-width: 1010px;*/
+}
+.pclr {
+	clear: both;
+}
+.prj {
+	width: 100%;
+	padding: 5px 0 15px 0;
+	border-bottom: solid 1px #f89406;
+}
+.prj li {
+	margin-left: 25px;
+}
+
+/* GENERAL */
+.heavy {
+	font-size: 1.4em;
+	font-weight:bold;
+}
+.light {
+	font-size: .7em;
+	color: #777;
+}
+.bold {
+	font-weight: bold;
+}
+.large {
+	font-size: 1.2em;
+}
+.small {
+	font-size: .8em;
+}
+
+/* CLIENTS */
+.clients {
+	width: 45%;
+	float: left;
+}
+.circle-help {
+	width: 60px;
+	height: calc(100% - 25px);
+	float: left;
+}
+.circle {
+	margin-top: calc(100% - 25px);
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #CCC;
+	position: relative;
+	bottom: 0;
+	left: 5;
+}
+.info {
+	width: calc(100% - 60px);
+	float: left;
+}
+
+/* PROGRESS */
+.progress {
+	width: 55%;
+	float: left;
+}
+.sprints {
+	width: 100%;
+}
+.sprint {
+	width: calc(20% - 2px);
+	height: 20px;
+	float: left;
+	border: 1px solid #f5f5f5;
+}
+.sprint.na {
+	background-color: #E5E5E5;
+}
+.sprint.gd {
+	background-color: #04DB3F;
+}
+.sprint.wn {
+	background-color: #FFC315;
+}
+.sprint.dn {
+	background-color: #FF4919;
+}
+
+</style>
+<div class="prjs">
+
+<!--TEAM A - D-Health-->
+	<div class="prj">
+
+		<div class="clients">
+			<span class="heavy">
+				D-Health
+			</span>
+			<div class="desc">
+				project description
+
+			</div><!--div.desc-->
+			<div class="team">
+				<div class="member">
+					<div class="circle-help">
+						<div class="circle">
+							<!-- <img src=""> -->
+						</div><!--circle-->
+					</div><!--div.circle-help-->
+					<div class="info">
+						<span class="large">
+							Jared Coodner
+						</span>
+						<span class="light bold">
+							Director/Co-Founder
+						</span>
+						<p>
+							<ul>
+								<li>
+									Board	member	of	GiveChange
+								</li>
+								<li>
+									BS,	Masters	and	PhD	in	Biomedical	Engineering
+								</li>
+							</ul>
+						</p>
+					</div><!--div.info-->
+					<div class="pclr"></div>
+				</div><!--div.member-->
+
+			</div><!--div.team-->
+		</div><!--div.clients-->
+
+		<div class="progress">
+			<span class="bold">
+				SPRINT 2
+				<span class="small">
+					of 5
+				</span>
+			</span>
+			<div class="sprints">
+				<div class="sprint gd" title="Sprint 1" data-ts="a1"></div>
+				<div class="sprint wn" title="Sprint 2" data-ts="a2"></div>
+				<div class="sprint dn" title="Sprint 3" data-ts="a3"></div>
+				<div class="sprint na" title="Sprint 4" data-ts="a4"></div>
+				<div class="sprint na" title="Sprint 5" data-ts="a5"></div>
+				<div class="pclr"></div>
+			</div>
+		</div><!--div.progress-->
+
+		<div class="pclr"></div>
+	</div><!--div.prj-->
+
+<!--TEAM B - Travelist-->
+	<div class="prj">
+		Project 2
+	</div><!--div.prj-->
+
+</div><!--div.prjs-->
